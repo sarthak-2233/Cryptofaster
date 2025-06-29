@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Coinpage from "./Pages/Coinpage";
 
+
 const useStyles = makeStyles(() => ({
   App: {
     backgroundColor: "#14161a",
@@ -23,7 +24,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/coin/:id" element={<Coinpage></Coinpage>}></Route>         
+          <Route path="/coin/:id" element={<Coinpage/>}></Route>         
         </Routes>
       </BrowserRouter>
     </div>
